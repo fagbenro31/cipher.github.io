@@ -1,0 +1,10 @@
+Average FG%   Average TrueShooting%          Average PPG
+45.73           52.06			       10.98
+High
+66.9		64.3				30.1
+
+Low
+
+27.2		30.9				1.7
+
+

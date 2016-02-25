@@ -1,0 +1,911 @@
+<html>
+  <head>
+    <script type="text/javascript" src="stepChart.js"></script>
+	<script type="text/javascript" src="pieChart.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="charts.js"></script>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<style>
+	 #space {padding-top:100px;}
+	 #wilt{margin-top:200px;}
+	</style>
+  </head>
+  <body>
+	<div id="averagesWithGamesPlayed"></div>
+	<div id="space"></div>
+	<div id="averagesWithoutGamesPlayed"></div>
+	<div id="space"></div>
+	<div id="averagesComparedToBaselineChart"></div>
+	<section id="jordan">
+	<div class="block">
+	<h1>Player Accomplishment Summary</h1>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="finals_mvp.png"></img>
+	<img src="finals_mvp.png"></img>
+	<img src="finals_mvp.png"></img>
+	<img src="finals_mvp.png"></img>
+	<img src="finals_mvp.png"></img>
+	<img src="finals_mvp.png"></img>
+	<img src="40px-mvp-award-213185.png"></img>
+	<img src="40px-mvp-award-213185.png"></img>
+	<img src="40px-mvp-award-213185.png"></img>
+	<img src="40px-mvp-award-213185.png"></img>
+	<img src="40px-mvp-award-213185.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star_mvp.png"></img>
+	<img src="All_star_mvp.png"></img>
+	<img src="All_star_mvp.png"></img>
+	<img src="40px-trophy-cup-clip-art-66818.jpg"></img>
+	<img src="lockdown.jpg"></img>
+	</div>
+	<div id="space"></div>
+	<div id="space"></div>
+	<div id="piechart_3d" class="piechart_3d"></div>
+	<div id="piechart_3d36" class="piechart_3d"></div>
+	<div id="piechart_3d27" class="piechart_3d"></div>
+	<div id="piechart_3d26" class="piechart_3d"></div>
+	<div id="piechart_3d28" class="piechart_3d"></div>
+	<div id="piechart_3d29" class="piechart_3d"></div>
+	<div id="piechart_3d30" class="piechart_3d"></div>
+	<div id="piechart_3d31" class="piechart_3d"></div>
+	<div id="piechart_3d32" class="piechart_3d"></div>
+	<div id="piechart_3d33" class="piechart_3d"></div>
+	<div id="piechart_3d34" class="piechart_3d"></div>
+	<div id="piechart_3d35" class="piechart_3d"></div>
+	</section>
+	<section id="wilt">
+	<div class="block">
+	<h1>Player Accomplishment Summary</h1>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="finals_mvp.png"></img>
+	<img src="40px-mvp-award-213185.png"></img>
+	<img src="40px-mvp-award-213185.png"></img>
+	<img src="40px-mvp-award-213185.png"></img>
+	<img src="40px-mvp-award-213185.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star_mvp.png"></img>
+	<img src="40px-trophy-cup-clip-art-66818.jpg"></img>
+	</div>
+	<div id="space"></div>
+	<div id="space"></div>
+	<div id="piechart_3d2" class="piechart_3d"></div>
+	<div id="piechart_3d37" class="piechart_3d"></div>
+	<div id="piechart_3d38" class="piechart_3d"></div>
+	<div id="piechart_3d39" class="piechart_3d"></div>
+	<div id="piechart_3d40" class="piechart_3d"></div>
+	<div id="piechart_3d41" class="piechart_3d"></div>
+	<div id="piechart_3d42" class="piechart_3d"></div>
+	<div id="piechart_3d43" class="piechart_3d"></div>
+	<div id="piechart_3d44" class="piechart_3d"></div>
+	<div id="piechart_3d45" class="piechart_3d"></div>
+	<div id="piechart_3d46" class="piechart_3d"></div>
+	<div id="piechart_3d47" class="piechart_3d"></div>
+	</section>
+	<section id="russell">
+	<div class="block">
+	<h1>Player Accomplishment Summary</h1>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="40px-mvp-award-213185.png"></img>
+	<img src="40px-mvp-award-213185.png"></img>
+	<img src="40px-mvp-award-213185.png"></img>
+	<img src="40px-mvp-award-213185.png"></img>
+	<img src="40px-mvp-award-213185.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star_mvp.png"></img>
+	</div>
+	<div id="space"></div>
+	<div id="space"></div>
+	<div id="piechart_3d3" class="piechart_3d"></div>
+	<div id="piechart_3d48" class="piechart_3d"></div>
+	<div id="piechart_3d49" class="piechart_3d"></div>
+	<div id="piechart_3d50" class="piechart_3d"></div>
+	<div id="piechart_3d51" class="piechart_3d"></div>
+	<div id="piechart_3d52" class="piechart_3d"></div>
+	<div id="piechart_3d53" class="piechart_3d"></div>
+	<div id="piechart_3d54" class="piechart_3d"></div>
+	<div id="piechart_3d55" class="piechart_3d"></div>
+	<div id="piechart_3d56" class="piechart_3d"></div>
+	</section>
+	<section id="shaq">
+	<div class="block">
+	<h1>Player Accomplishment Summary</h1>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="finals_mvp.png"></img>
+	<img src="finals_mvp.png"></img>
+	<img src="finals_mvp.png"></img>
+	<img src="40px-mvp-award-213185.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star_mvp.png"></img>
+	<img src="All_star_mvp.png"></img>
+	<img src="All_star_mvp.png"></img>
+	<img src="40px-trophy-cup-clip-art-66818.jpg"></img>
+	</div>
+	<div id="space"></div>
+	<div id="space"></div>
+	<div id="piechart_3d4" class="piechart_3d"></div>
+	<div id="piechart_3d57" class="piechart_3d"></div>
+	<div id="piechart_3d58" class="piechart_3d"></div>
+	<div id="piechart_3d59" class="piechart_3d"></div>
+	<div id="piechart_3d60" class="piechart_3d"></div>
+	<div id="piechart_3d61" class="piechart_3d"></div>
+	<div id="piechart_3d62" class="piechart_3d"></div>
+	<div id="piechart_3d63" class="piechart_3d"></div>
+	<div id="piechart_3d64" class="piechart_3d"></div>
+	<div id="piechart_3d65" class="piechart_3d"></div>
+	</section>
+	<section id="oscar">
+		<div class="block">
+	<h1>Player Accomplishment Summary</h1>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="40px-mvp-award-213185.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star_mvp.png"></img>
+	<img src="All_star_mvp.png"></img>
+	<img src="All_star_mvp.png"></img>
+	<img src="40px-trophy-cup-clip-art-66818.jpg"></img>
+	</div>
+	<div id="space"></div>
+	<div id="space"></div>
+	<div id="piechart_3d5" class="piechart_3d"></div>
+	<div id="piechart_3d66" class="piechart_3d"></div>
+	<div id="piechart_3d67" class="piechart_3d"></div>
+	<div id="piechart_3d68" class="piechart_3d"></div>
+	<div id="piechart_3d69" class="piechart_3d"></div>
+	<div id="piechart_3d70" class="piechart_3d"></div>
+	<div id="piechart_3d71" class="piechart_3d"></div>
+	<div id="piechart_3d72" class="piechart_3d"></div>
+	<div id="piechart_3d73" class="piechart_3d"></div>
+	</section>
+	<section id="magic">
+	<div class="block">
+	<h1>Player Accomplishment Summary</h1>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="finals_mvp.png"></img>
+	<img src="finals_mvp.png"></img>
+	<img src="finals_mvp.png"></img>
+	<img src="40px-mvp-award-213185.png"></img>
+	<img src="40px-mvp-award-213185.png"></img>
+	<img src="40px-mvp-award-213185.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star_mvp.png"></img>
+	<img src="All_star_mvp.png"></img>
+	</div>
+	<div id="space"></div>
+	<div id="space"></div>
+	<div id="piechart_3d6" class="piechart_3d"></div>
+	<div id="piechart_3d74" class="piechart_3d"></div>
+	<div id="piechart_3d75" class="piechart_3d"></div>
+	<div id="piechart_3d76" class="piechart_3d"></div>
+	<div id="piechart_3d77" class="piechart_3d"></div>
+	<div id="piechart_3d78" class="piechart_3d"></div>
+	<div id="piechart_3d79" class="piechart_3d"></div>
+	<div id="piechart_3d80" class="piechart_3d"></div>
+	<div id="piechart_3d81" class="piechart_3d"></div>
+	<div id="piechart_3d82" class="piechart_3d"></div>
+	</section>
+	<section id="kareem">
+	<div class="block">
+	<h1>Player Accomplishment Summary</h1>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="finals_mvp.png"></img>
+	<img src="finals_mvp.png"></img>
+	<img src="40px-mvp-award-213185.png"></img>
+	<img src="40px-mvp-award-213185.png"></img>
+	<img src="40px-mvp-award-213185.png"></img>
+	<img src="40px-mvp-award-213185.png"></img>
+	<img src="40px-mvp-award-213185.png"></img>
+	<img src="40px-mvp-award-213185.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="40px-trophy-cup-clip-art-66818.jpg"></img>
+	</div>
+	<div id="space"></div>
+	<div id="space"></div>
+	<div id="piechart_3d7" class="piechart_3d"></div>
+	<div id="piechart_3d83" class="piechart_3d"></div>
+	<div id="piechart_3d84" class="piechart_3d"></div>
+	<div id="piechart_3d85" class="piechart_3d"></div>
+	<div id="piechart_3d86" class="piechart_3d"></div>
+	<div id="piechart_3d87" class="piechart_3d"></div>
+	<div id="piechart_3d88" class="piechart_3d"></div>
+	<div id="piechart_3d89" class="piechart_3d"></div>
+	<div id="piechart_3d90" class="piechart_3d"></div>
+	<div id="piechart_3d91" class="piechart_3d"></div>
+	<div id="piechart_3d92" class="piechart_3d"></div>
+	<div id="piechart_3d93" class="piechart_3d"></div>
+	<div id="space"></div>
+	</section>
+	<section id="duncan">
+	<div class="block">
+	<h1>Player Accomplishment Summary</h1>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="finals_mvp.png"></img>
+	<img src="finals_mvp.png"></img>
+	<img src="finals_mvp.png"></img>
+	<img src="40px-mvp-award-213185.png"></img>
+	<img src="40px-mvp-award-213185.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star_mvp.png"></img>
+	<img src="40px-trophy-cup-clip-art-66818.jpg"></img>
+	</div>
+	<div id="space"></div>
+	<div id="space"></div>
+	<div id="piechart_3d8" class="piechart_3d"></div>
+	<div id="piechart_3d94" class="piechart_3d"></div>
+	<div id="piechart_3d95" class="piechart_3d"></div>
+	<div id="piechart_3d96" class="piechart_3d"></div>
+	<div id="piechart_3d97" class="piechart_3d"></div>
+	<div id="piechart_3d98" class="piechart_3d"></div>
+	<div id="piechart_3d99" class="piechart_3d"></div>
+	<div id="piechart_3d100" class="piechart_3d"></div>
+	<div id="piechart_3d101" class="piechart_3d"></div>
+	<div id="piechart_3d102" class="piechart_3d"></div>
+	<div id="piechart_3d103" class="piechart_3d"></div>
+	</section>
+	<section id="bird">
+	<div class="block">
+	<h1>Player Accomplishment Summary</h1>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="finals_mvp.png"></img>
+	<img src="finals_mvp.png"></img>
+	<img src="40px-mvp-award-213185.png"></img>
+	<img src="40px-mvp-award-213185.png"></img>
+	<img src="40px-mvp-award-213185.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star_mvp.png"></img>
+	<img src="40px-trophy-cup-clip-art-66818.jpg"></img>
+	</div>
+	<div id="space"></div>
+	<div id="space"></div>
+	<div id="piechart_3d9" class="piechart_3d"></div>
+	<div id="piechart_3d104" class="piechart_3d"></div>
+	<div id="piechart_3d105" class="piechart_3d"></div>
+	<div id="piechart_3d106" class="piechart_3d"></div>
+	<div id="piechart_3d107" class="piechart_3d"></div>
+	<div id="piechart_3d108" class="piechart_3d"></div>
+	<div id="piechart_3d109" class="piechart_3d"></div>
+	<div id="piechart_3d110" class="piechart_3d"></div>
+	</section>
+	<section id="kobe">
+	<div class="block">
+	<h1>Player Accomplishment Summary</h1>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="finals_mvp.png"></img>
+	<img src="finals_mvp.png"></img>
+	<img src="40px-mvp-award-213185.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star_mvp.png"></img>
+	<img src="All_star_mvp.png"></img>
+	<img src="All_star_mvp.png"></img>
+	<img src="All_star_mvp.png"></img>
+	</div>
+	<div id="space"></div>
+	<div id="space"></div>
+	<div id="piechart_3d10" class="piechart_3d"></div>
+	<div id="piechart_3d111" class="piechart_3d"></div>
+	<div id="piechart_3d112" class="piechart_3d"></div>
+	<div id="piechart_3d113" class="piechart_3d"></div>
+	<div id="piechart_3d114" class="piechart_3d"></div>
+	<div id="piechart_3d115" class="piechart_3d"></div>
+	<div id="piechart_3d116" class="piechart_3d"></div>
+	<div id="piechart_3d117" class="piechart_3d"></div>
+	<div id="piechart_3d118" class="piechart_3d"></div>
+	<div id="piechart_3d119" class="piechart_3d"></div>
+	<div id="piechart_3d120" class="piechart_3d"></div>
+	<div id="piechart_3d121" class="piechart_3d"></div>
+	</section>
+	<section id="west">
+	<div class="block">
+	<h1>Player Accomplishment Summary</h1>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="finals_mvp.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star_mvp.png"></img>
+	</div>
+	<div id="space"></div>
+	<div id="space"></div>
+	<div id="piechart_3d11" class="piechart_3d"></div>
+	<div id="piechart_3d122" class="piechart_3d"></div>
+	<div id="piechart_3d123" class="piechart_3d"></div>
+	<div id="piechart_3d124" class="piechart_3d"></div>
+	<div id="piechart_3d125" class="piechart_3d"></div>
+	<div id="piechart_3d126" class="piechart_3d"></div>
+	<div id="piechart_3d127" class="piechart_3d"></div>
+	<div id="piechart_3d128" class="piechart_3d"></div>
+	<div id="piechart_3d129" class="piechart_3d"></div>
+	<div id="piechart_3d130" class="piechart_3d"></div>
+	<div id="piechart_3d131" class="piechart_3d"></div>
+	</section>
+	<section id="baylor">
+	<div class="block">
+	<h1>Player Accomplishment Summary</h1>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star_mvp.png"></img>
+	<img src="40px-trophy-cup-clip-art-66818.jpg"></img>
+	</div>
+	<div id="space"></div>
+	<div id="space"></div>
+	<div id="piechart_3d12" class="piechart_3d"></div>
+	<div id="piechart_3d132" class="piechart_3d"></div>
+	<div id="piechart_3d133" class="piechart_3d"></div>
+	<div id="piechart_3d134" class="piechart_3d"></div>
+	</section>
+	<section id="hakeem">
+	<div class="block">
+	<h1>Player Accomplishment Summary</h1>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="finals_mvp.png"></img>
+	<img src="finals_mvp.png"></img>
+	<img src="40px-mvp-award-213185.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="lockdown.jpg"></img>
+	<img src="lockdown.jpg"></img>
+	</div>
+	<div id="space"></div>
+	<div id="space"></div>
+	<div id="piechart_3d13" class="piechart_3d"></div>
+	<div id="piechart_3d135" class="piechart_3d"></div>
+	<div id="piechart_3d136" class="piechart_3d"></div>
+	<div id="piechart_3d137" class="piechart_3d"></div>
+	<div id="piechart_3d138" class="piechart_3d"></div>
+	<div id="piechart_3d139" class="piechart_3d"></div>
+	<div id="piechart_3d140" class="piechart_3d"></div>
+	<div id="piechart_3d141" class="piechart_3d"></div>
+	<div id="piechart_3d142" class="piechart_3d"></div>
+	<div id="piechart_3d143" class="piechart_3d"></div>
+	<div id="piechart_3d144" class="piechart_3d"></div>
+	<div id="piechart_3d145" class="piechart_3d"></div>
+	<div id="piechart_3d146" class="piechart_3d"></div>
+	</section>
+	<section id="pettit">
+	<div class="block">
+	<h1>Player Accomplishment Summary</h1>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="40px-mvp-award-213185.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star_mvp.png"></img>
+	<img src="All_star_mvp.png"></img>
+	<img src="All_star_mvp.png"></img>
+	<img src="All_star_mvp.png"></img>
+	<img src="40px-trophy-cup-clip-art-66818.jpg"></img>
+	</div>
+	<div id="space"></div>
+	<div id="space"></div>
+	<div id="piechart_3d14" class="piechart_3d"></div>
+	<div id="piechart_3d147" class="piechart_3d"></div>
+	<div id="piechart_3d148" class="piechart_3d"></div>
+	<div id="piechart_3d149" class="piechart_3d"></div>
+	<div id="piechart_3d150" class="piechart_3d"></div>
+	<div id="piechart_3d151" class="piechart_3d"></div>
+	<div id="piechart_3d152" class="piechart_3d"></div>
+	<div id="piechart_3d153" class="piechart_3d"></div>
+	<div id="piechart_3d154" class="piechart_3d"></div>
+	<div id="space"></div>
+	</section>
+	<section id="mosesMalone">
+	<div class="block">
+	<h1>Player Accomplishment Summary</h1>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="finals_mvp.png"></img>
+	<img src="40px-mvp-award-213185.png"></img>
+	<img src="40px-mvp-award-213185.png"></img>
+	<img src="40px-mvp-award-213185.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	</div>
+	<div id="space"></div>
+	<div id="space"></div>
+	<div id="piechart_3d15" class="piechart_3d"></div>
+	<div id="piechart_3d155" class="piechart_3d"></div>
+	<div id="piechart_3d156" class="piechart_3d"></div>
+	<div id="piechart_3d157" class="piechart_3d"></div>
+	<div id="piechart_3d158" class="piechart_3d"></div>
+	<div id="piechart_3d159" class="piechart_3d"></div>
+	<div id="piechart_3d160" class="piechart_3d"></div>
+	<div id="piechart_3d161" class="piechart_3d"></div>
+	<div id="piechart_3d162" class="piechart_3d"></div>
+	<div id="piechart_3d163" class="piechart_3d"></div>
+	<div id="space"></div>
+	</section>
+	<section id="erving">
+	<div class="block">
+	<h1>Player Accomplishment Summary</h1>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="40px-mvp-award-213185.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star_mvp.png"></img>
+	<img src="All_star_mvp.png"></img>
+	</div>
+	<div id="space"></div>
+	<div id="space"></div>
+	<div id="piechart_3d16" class="piechart_3d"></div>
+	<div id="piechart_3d164" class="piechart_3d"></div>
+	<div id="piechart_3d165" class="piechart_3d"></div>
+	<div id="piechart_3d166" class="piechart_3d"></div>
+	<div id="piechart_3d167" class="piechart_3d"></div>
+	<div id="piechart_3d168" class="piechart_3d"></div>
+	<div id="piechart_3d169" class="piechart_3d"></div>
+	</section>
+	<section id="havlicek">
+	<div class="block">
+	<h1>Player Accomplishment Summary</h1>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="finals_mvp.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	</div>
+	<div id="space"></div>
+	<div id="space"></div>
+	<div id="piechart_3d17" class="piechart_3d"></div>
+	<div id="piechart_3d170" class="piechart_3d"></div>
+	<div id="piechart_3d171" class="piechart_3d"></div>
+	<div id="piechart_3d172" class="piechart_3d"></div>
+	<div id="piechart_3d173" class="piechart_3d"></div>
+	<div id="piechart_3d174" class="piechart_3d"></div>
+	<div id="piechart_3d175" class="piechart_3d"></div>
+	</section>
+	<section id="karlMalone">
+	<div class="block">
+	<h1>Player Accomplishment Summary</h1>
+	<img src="40px-mvp-award-213185.png"></img>
+	<img src="40px-mvp-award-213185.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star_mvp.png"></img>
+	<img src="All_star_mvp.png"></img>
+	</div>
+	<div id="space"></div>
+	<div id="space"></div>
+	<div id="piechart_3d18" class="piechart_3d"></div>
+	<div id="piechart_3d176" class="piechart_3d"></div>
+	<div id="piechart_3d177" class="piechart_3d"></div>
+	<div id="piechart_3d178" class="piechart_3d"></div>
+	<div id="piechart_3d179" class="piechart_3d"></div>
+	<div id="piechart_3d180" class="piechart_3d"></div>
+	<div id="piechart_3d181" class="piechart_3d"></div>
+	<div id="piechart_3d182" class="piechart_3d"></div>
+	<div id="piechart_3d183" class="piechart_3d"></div>
+	</section>
+	<section id="thomas">
+	<div class="block">
+	<h1>Player Accomplishment Summary</h1>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="finals_mvp.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star_mvp.png"></img>
+	<img src="All_star_mvp.png"></img>
+	</div>
+	<div id="space"></div>
+	<div id="space"></div>
+	<div id="piechart_3d19" class="piechart_3d"></div>
+	<div id="piechart_3d184" class="piechart_3d"></div>
+	<div id="piechart_3d185" class="piechart_3d"></div>
+	<div id="piechart_3d186" class="piechart_3d"></div>
+	<div id="piechart_3d187" class="piechart_3d"></div>
+	<div id="piechart_3d188" class="piechart_3d"></div>
+	<div id="piechart_3d189" class="piechart_3d"></div>
+	<div id="piechart_3d190" class="piechart_3d"></div>
+	</section>
+	<section id="barkley">
+	<div class="block">
+	<h1>Player Accomplishment Summary</h1>
+	<img src="40px-mvp-award-213185.png"></img>
+    <img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star_mvp.png"></img>
+	</div>
+	<div id="space"></div>
+	<div id="space"></div>
+	<div id="piechart_3d20" class="piechart_3d"></div>
+	<div id="piechart_3d191" class="piechart_3d"></div>
+	<div id="piechart_3d192" class="piechart_3d"></div>
+	<div id="piechart_3d193" class="piechart_3d"></div>
+	<div id="piechart_3d194" class="piechart_3d"></div>
+	<div id="piechart_3d195" class="piechart_3d"></div>
+	<div id="piechart_3d196" class="piechart_3d"></div>
+	<div id="piechart_3d197" class="piechart_3d"></div>
+	</section>
+	<section id="curry">
+	<div class="block">
+	<h1>Player Accomplishment Summary</h1>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="40px-mvp-award-213185.png"></img>
+    <img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	</div>
+	<div id="space"></div>
+	<div id="space"></div>
+	<div id="piechart_3d21" class="piechart_3d"></div>
+	<div id="piechart_3d198" class="piechart_3d"></div>
+	<div id="piechart_3d199" class="piechart_3d"></div>
+	<div id="piechart_3d200" class="piechart_3d"></div>
+	<div id="piechart_3d201" class="piechart_3d"></div>
+	<div id="piechart_3d202" class="piechart_3d"></div>
+	</section>
+	<section id="durant">
+	<div class="block">
+	<h1>Player Accomplishment Summary</h1>
+	<img src="40px-mvp-award-213185.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star_mvp.png"></img>
+	<img src="40px-trophy-cup-clip-art-66818.jpg"></img>
+	</div>
+	<div id="space"></div>
+	<div id="space"></div>
+	<div id="piechart_3d22" class="piechart_3d"></div>
+	<div id="piechart_3d203" class="piechart_3d"></div>
+	<div id="piechart_3d204" class="piechart_3d"></div>
+	<div id="piechart_3d205" class="piechart_3d"></div>
+	<div id="piechart_3d206" class="piechart_3d"></div>
+	<div id="piechart_3d207" class="piechart_3d"></div>
+	</section>
+	<section id="lebron">
+	<div class="block">
+	<h1>Player Accomplishment Summary</h1>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="64px-NBA_Trophy2.png"></img>
+	<img src="finals_mvp.png"></img>
+	<img src="finals_mvp.png"></img>
+	<img src="40px-mvp-award-213185.png"></img>
+	<img src="40px-mvp-award-213185.png"></img>
+	<img src="40px-mvp-award-213185.png"></img>
+	<img src="40px-mvp-award-213185.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star_mvp.png"></img>
+	<img src="All_star_mvp.png"></img>
+	<img src="40px-trophy-cup-clip-art-66818.jpg"></img>
+	</div>
+	<div id="space"></div>
+	<div id="space"></div>
+	<div id="piechart_3d23" class="piechart_3d"></div>
+	<div id="piechart_3d208" class="piechart_3d"></div>
+	<div id="piechart_3d209" class="piechart_3d"></div>
+	<div id="piechart_3d210" class="piechart_3d"></div>
+	<div id="piechart_3d211" class="piechart_3d"></div>
+	<div id="piechart_3d212" class="piechart_3d"></div>
+	<div id="piechart_3d213" class="piechart_3d"></div>
+	<div id="piechart_3d214" class="piechart_3d"></div>
+	<div id="piechart_3d215" class="piechart_3d"></div>
+	<div id="piechart_3d216" class="piechart_3d"></div>
+	<div id="piechart_3d217" class="piechart_3d"></div>
+	</section>
+	<section id="westbrook">
+	<div class="block">
+	<h1>Player Accomplishment Summary</h1>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star_mvp.png"></img>
+	<img src="All_star_mvp.png"></img>
+	</div>
+	<div id="space"></div>
+	<div id="space"></div>
+	<div id="piechart_3d24" class="piechart_3d"></div>
+	<div id="piechart_3d218" class="piechart_3d"></div>
+	<div id="piechart_3d219" class="piechart_3d"></div>
+	<div id="piechart_3d220" class="piechart_3d"></div>
+	<div id="piechart_3d221" class="piechart_3d"></div>
+	<div id="piechart_3d222" class="piechart_3d"></div>
+	</section>
+	<section id="Davis">
+	<div class="block">
+	<h1>Player Accomplishment Summary</h1>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	<img src="All_star.png"></img>
+	</div>
+	<div id="space"></div>
+	<div id="space"></div>
+	<div id="piechart_3d25" class="piechart_3d"></div>
+	<div id="piechart_3d223" class="piechart_3d"></div>
+	<div id="piechart_3d224" class="piechart_3d"></div>
+	<div id="piechart_3d225" class="piechart_3d"></div>
+	<div id="piechart_3d226" class="piechart_3d"></div>
+	</section>
+  </body>
+</html>
